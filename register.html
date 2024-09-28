@@ -1,25 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
 
-    <title>Login #2</title>
-  </head>
-  <body>
-  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Login #2</title>
+</head>
+
+<body>
+
 
   <div class="d-lg-flex half">
     <div class="bg order-1 order-md-2" style="background-image: url('images/bg_1.jpg');"></div>
@@ -28,35 +30,35 @@
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7">
-            <h3>Registra tus datos aquí</h3>
+            <h3>Registra sus datos aquí</h3>
             <form action="#" method="post">
 
               <div class="form-group first">
                 <label for="name">Nombre</label>
-                <input type="text" class="form-control" placeholder="Tu nombre *" id="name_">
+                <input type="text" class="form-control" placeholder="Nombre *" id="name_">
               </div>
               <br>
 
               <div class="form-group first">
                 <label for="lastname">Apellido</label>
-                <input type="text" class="form-control" placeholder="Tu Apellido *" id="lastname_">
+                <input type="text" class="form-control" placeholder="Apellido *" id="lastname_">
               </div>
               <br>
 
               <div class="form-group first">
                 <label for="phone">Número de celular</label>
-                <input type="number" class="form-control" placeholder="Tu celualr *" id="phone_">
+                <input type="number" class="form-control" placeholder="Numero celular *" id="phone_">
               </div>
               <br>
-              
+
               <div class="form-group last mb-3">
-                <label for="cc">CC</label>
-                <input type="number" class="form-control" placeholder="Tu numero de identificación *" id="cc">
+                <label for="cc">Número de identificación</label>
+                <input type="number" class="form-control" placeholder="Número de identificación *" id="cc">
               </div>
-              
+
               <div class="d-flex mb-5 align-items-center">
                 <label class="control control--checkbox mb-0"><span class="caption">Mantener datos guardados</span>
-                  <input type="checkbox" checked="checked"/>
+                  <input type="checkbox" checked="checked" />
                   <div class="control__indicator"></div>
                 </label>
               </div>
@@ -64,20 +66,41 @@
               <input type="button" value="Registrate" class="btn btn-block btn-primary" onclick="validateForm()">
 
             </form>
+
+            <!-- Modal -->
+            <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro Exitoso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Usuario registrado correctamente.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
     </div>
 
-    
   </div>
-    
-    
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

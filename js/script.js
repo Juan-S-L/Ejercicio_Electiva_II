@@ -24,10 +24,9 @@ function validateForm() {
     if (!name || !lastname || !phone || !cc) {
         alert("Por favor, completa todos los campos.");
         return false; // Detener el envío del formulario
-    }else{
-        window.location.href = "ok.html";
     }
-
-    // Si todos los campos están completos
-    alert("Formulario enviado correctamente.");
+  
+      // Si todos los campos están completos, mostrar el modal
+    var myModal = new bootstrap.Modal(document.getElementById('successModal'));
+    myModal.show();
 }
